@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<script>
+
+var b;
+
+  function load(){
+    b = document.getElementById("cuerpo");
+
+  }
+
+function test(){
+   var lista = document.getElementsByTagName("p");
+
+   b.removeChild(lista.item(0));
+   alert("se elimino un elemento");
+}
+
+</script>
+
+
+</head>
+
+<body onload="load();" >
+
+<div id="cuerpo" >
+    <p id="e1"> Elemento 1 </p>
+    <p id="e2"> Elemento 2 </p>
+    <p id="e3"> Elemento 3 </p>
+    <p id="e4"> Elemento 4 </p>
+    <p id="e5"> Elemento 5 </p>
+</div>
+
+
+<input type="button" onclick="test();" value="Dame click"/>
+
+</body>
+
+</html>
